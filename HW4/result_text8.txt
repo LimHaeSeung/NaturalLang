@@ -1,0 +1,200 @@
+six
+0.8852 zero
+0.8800 nine
+0.8687 one
+0.8569 five
+0.8425 eight
+0.8340 two
+0.8329 four
+0.8197 lincoln
+
+right
+0.6729 zero
+0.6611 on
+0.6595 nine
+0.6579 three
+0.6561 at
+0.6524 four
+0.6436 more
+0.6401 this
+
+french
+0.7633 lincoln
+0.7281 an
+0.7264 nine
+0.7260 at
+0.7168 on
+0.7153 zero
+0.7151 their
+0.7147 time
+
+capital
+0.5820 were
+0.5722 ads
+0.5707 australia
+0.5697 although
+0.5603 but
+0.5600 france
+0.5563 d
+0.5551 works
+
+worker
+0.3902 const
+0.3755 sixth
+0.3575 welfare
+0.3412 wiesenthal
+0.3272 ultimatum
+0.3199 dogme
+0.3154 anconia
+0.3146 kilimanjaro
+
+his
+0.8007 as
+0.7943 one
+0.7888 rand
+0.7816 by
+0.7773 zero
+0.7748 he
+0.7721 five
+0.7626 with
+
+philosophy
+0.7382 zero
+0.7204 but
+0.7160 three
+0.7120 or
+0.7101 nine
+0.7100 one
+0.7060 two
+0.7056 b
+
+history
+0.7664 an
+0.7575 zero
+0.7480 five
+0.7468 at
+0.7407 one
+0.7315 eight
+0.7288 nine
+0.7241 on
+
+economic
+0.6375 apollo
+0.6065 at
+0.6032 four
+0.6006 been
+0.5881 who
+0.5873 university
+0.5841 one
+0.5835 various
+
+american
+0.7384 zero
+0.7107 ads
+0.7103 were
+0.7099 eight
+0.7098 nine
+0.7081 seven
+0.7042 six
+0.7040 one
+
+good
+0.6732 from
+0.6684 zero
+0.6683 one
+0.6681 UNK
+0.6671 by
+0.6598 five
+0.6549 two
+0.6526 as
+
+bad
+0.3508 camilla
+0.3423 cruz
+0.3414 rigid
+0.3413 freighters
+0.3295 prescribe
+0.3263 phase
+0.3227 good
+0.3181 poulsen
+
+people
+0.8070 nine
+0.7920 zero
+0.7896 six
+0.7764 five
+0.7693 eight
+0.7687 one
+0.7654 her
+0.7574 lincoln
+
+speech
+0.4287 rights
+0.4204 past
+0.4068 data
+0.4003 based
+0.3976 east
+0.3965 each
+0.3905 us
+0.3887 seven
+
+robot
+0.3632 satisfies
+0.3261 derby
+0.3193 ship
+0.3184 refurbished
+0.3151 bud
+0.3053 searchable
+0.3015 biathlon
+0.3008 circumference
+
+language
+0.7063 nine
+0.7057 zero
+0.6946 six
+0.6901 three
+0.6898 four
+0.6890 altruism
+0.6811 one
+0.6764 two
+
+children
+0.5799 nine
+0.5642 eight
+0.5636 east
+0.5613 external
+0.5550 example
+0.5500 members
+0.5473 united
+0.5471 four
+
+computer
+0.5397 lincoln
+0.5317 year
+0.5203 so
+0.5177 ascii
+0.5154 known
+0.5150 zero
+0.5093 on
+0.5050 was
+
+community
+0.5314 which
+0.5170 though
+0.5077 so
+0.5045 isbn
+0.4995 taggart
+0.4985 world
+0.4979 such
+0.4971 she
+
+important
+0.6747 section
+0.6425 an
+0.6371 seven
+0.6245 eight
+0.6212 ascii
+0.6167 list
+0.6156 nine
+0.6139 one
+
