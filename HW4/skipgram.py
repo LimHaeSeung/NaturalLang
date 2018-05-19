@@ -8,8 +8,8 @@ import math
 import time
 
 os.environ['CUDA_VISIBLE_DEVICES'] = ''
-# corpus_filenm = "text8.txt"
-corpus_filenm = "morphs_namu_small.txt"
+corpus_filenm = "text8.txt"
+# corpus_filenm = "morphs_namu_small.txt"
 
 train_mode = True
 # train_mode = False
@@ -25,8 +25,9 @@ valid_size = 16
 valid_window = 1000
 valid_examples = np.random.choice(valid_window, valid_size, replace=False)
 
-num_steps = 2000
+num_steps = 500000
 # num_steps = 1000000
+
 
 # Step 1. Read corpus and tokenize words based on space.
 def read_data(filename):
@@ -245,10 +246,10 @@ with tf.Session(graph=graph) as session:
     # TODO: You must define a TF operation before running.
     # TODO: Hint: See how the 'similarity' TF operation works.
 
-    query_file = open('query_words_namu.txt', 'r', encoding='utf-8-sig')
-    outfile = open('result_namu.txt', 'w', encoding='utf-8-sig')
-    # query_file = open('query_words_text8.txt', 'r')
-    # outfile = open('result_text8.txt', 'w')
+    # query_file = open('query_words_namu.txt', 'r', encoding='utf-8-sig')
+    # outfile = open('result_namu.txt', 'w', encoding='utf-8-sig')
+    query_file = open('query_words_text8.txt', 'r')
+    outfile = open('result_text8.txt', 'w')
 
     query_words = query_file.read().splitlines()
     query_word_ids = []

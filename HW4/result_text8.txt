@@ -1,200 +1,200 @@
 six
-0.8852 zero
-0.8800 nine
-0.8687 one
-0.8569 five
-0.8425 eight
-0.8340 two
-0.8329 four
-0.8197 lincoln
+0.8951 eight
+0.8882 four
+0.8671 seven
+0.7645 nine
+0.7221 three
+0.6927 two
+0.6515 zero
+0.5484 originated
 
 right
-0.6729 zero
-0.6611 on
-0.6595 nine
-0.6579 three
-0.6561 at
-0.6524 four
-0.6436 more
-0.6401 this
+0.5997 left
+0.3870 frac
+0.3815 lengthened
+0.3764 broughton
+0.3761 housemate
+0.3688 immaculate
+0.3673 salim
+0.3643 lonsdaleite
 
 french
-0.7633 lincoln
-0.7281 an
-0.7264 nine
-0.7260 at
-0.7168 on
-0.7153 zero
-0.7151 their
-0.7147 time
+0.7436 german
+0.6595 british
+0.6248 english
+0.6163 russian
+0.5905 dutch
+0.5877 italian
+0.5819 spanish
+0.5438 japanese
 
 capital
-0.5820 were
-0.5722 ads
-0.5707 australia
-0.5697 although
-0.5603 but
-0.5600 france
-0.5563 d
-0.5551 works
+0.3978 monoclonal
+0.3908 wolves
+0.3907 origin
+0.3889 fencers
+0.3868 womb
+0.3830 consummated
+0.3814 tls
+0.3798 maa
 
 worker
-0.3902 const
-0.3755 sixth
-0.3575 welfare
-0.3412 wiesenthal
-0.3272 ultimatum
-0.3199 dogme
-0.3154 anconia
-0.3146 kilimanjaro
+0.4496 rounders
+0.4063 doctor
+0.4026 incentive
+0.4000 properties
+0.3991 standpoint
+0.3934 jezebel
+0.3896 crack
+0.3832 sibylla
 
 his
-0.8007 as
-0.7943 one
-0.7888 rand
-0.7816 by
-0.7773 zero
-0.7748 he
-0.7721 five
-0.7626 with
+0.8794 her
+0.7874 their
+0.6251 its
+0.5092 my
+0.5067 our
+0.5054 your
+0.4773 the
+0.4045 him
 
 philosophy
-0.7382 zero
-0.7204 but
-0.7160 three
-0.7120 or
-0.7101 nine
-0.7100 one
-0.7060 two
-0.7056 b
+0.4332 reforms
+0.4179 society
+0.4017 hilton
+0.3977 enthroned
+0.3961 sake
+0.3858 judeo
+0.3856 premise
+0.3855 movements
 
 history
-0.7664 an
-0.7575 zero
-0.7480 five
-0.7468 at
-0.7407 one
-0.7315 eight
-0.7288 nine
-0.7241 on
+0.4444 iic
+0.4395 list
+0.4284 aries
+0.4261 equidistant
+0.4177 spain
+0.4101 marburg
+0.4072 viewership
+0.4056 factbook
 
 economic
-0.6375 apollo
-0.6065 at
-0.6032 four
-0.6006 been
-0.5881 who
-0.5873 university
-0.5841 one
-0.5835 various
+0.4928 political
+0.4222 social
+0.4213 ogle
+0.3844 legal
+0.3832 refuelling
+0.3744 alexandrians
+0.3723 food
+0.3687 dystopian
 
 american
-0.7384 zero
-0.7107 ads
-0.7103 were
-0.7099 eight
-0.7098 nine
-0.7081 seven
-0.7042 six
-0.7040 one
+0.5191 british
+0.5029 canadian
+0.4954 italian
+0.4925 german
+0.4896 english
+0.4609 iranian
+0.4503 russian
+0.4496 irish
 
 good
-0.6732 from
-0.6684 zero
-0.6683 one
-0.6681 UNK
-0.6671 by
-0.6598 five
-0.6549 two
-0.6526 as
+0.4138 acheron
+0.3930 young
+0.3901 castell
+0.3877 care
+0.3832 clitic
+0.3827 schleswig
+0.3802 interactivity
+0.3775 personal
 
 bad
-0.3508 camilla
-0.3423 cruz
-0.3414 rigid
-0.3413 freighters
-0.3295 prescribe
-0.3263 phase
-0.3227 good
-0.3181 poulsen
+0.4167 shikoku
+0.4135 return
+0.4115 elamites
+0.4081 pronounces
+0.3960 joni
+0.3869 jehoahaz
+0.3862 incident
+0.3840 rooney
 
 people
-0.8070 nine
-0.7920 zero
-0.7896 six
-0.7764 five
-0.7693 eight
-0.7687 one
-0.7654 her
-0.7574 lincoln
+0.5107 men
+0.4807 women
+0.4799 children
+0.4571 jews
+0.4501 christians
+0.4462 countries
+0.4249 americans
+0.4136 snoop
 
 speech
-0.4287 rights
-0.4204 past
-0.4068 data
-0.4003 based
-0.3976 east
-0.3965 each
-0.3905 us
-0.3887 seven
+0.4179 resold
+0.4022 revue
+0.3997 crawl
+0.3993 typeset
+0.3974 voyages
+0.3973 baffled
+0.3910 apple
+0.3881 chianti
 
 robot
-0.3632 satisfies
-0.3261 derby
-0.3193 ship
-0.3184 refurbished
-0.3151 bud
-0.3053 searchable
-0.3015 biathlon
-0.3008 circumference
+0.4209 elvira
+0.3980 needle
+0.3955 toned
+0.3935 fiorentina
+0.3887 microbes
+0.3866 bryn
+0.3825 serpento
+0.3814 parnell
 
 language
-0.7063 nine
-0.7057 zero
-0.6946 six
-0.6901 three
-0.6898 four
-0.6890 altruism
-0.6811 one
-0.6764 two
+0.6295 languages
+0.4821 word
+0.4208 carnage
+0.4098 text
+0.4095 grammar
+0.4004 milgrom
+0.3999 translation
+0.3977 potsdam
 
 children
-0.5799 nine
-0.5642 eight
-0.5636 east
-0.5613 external
-0.5550 example
-0.5500 members
-0.5473 united
-0.5471 four
+0.4804 men
+0.4799 people
+0.4605 women
+0.4237 intrinsic
+0.4003 ships
+0.3987 sons
+0.3951 ricardian
+0.3934 glasnost
 
 computer
-0.5397 lincoln
-0.5317 year
-0.5203 so
-0.5177 ascii
-0.5154 known
-0.5150 zero
-0.5093 on
-0.5050 was
+0.4290 morbidity
+0.4257 radio
+0.4075 fiction
+0.3813 software
+0.3808 dag
+0.3784 cops
+0.3772 video
+0.3755 television
 
 community
-0.5314 which
-0.5170 though
-0.5077 so
-0.5045 isbn
-0.4995 taggart
-0.4985 world
-0.4979 such
-0.4971 she
+0.4583 lucio
+0.4025 research
+0.4015 blossoms
+0.4003 patel
+0.3949 meagre
+0.3931 genetics
+0.3829 inactivity
+0.3824 airport
 
 important
-0.6747 section
-0.6425 an
-0.6371 seven
-0.6245 eight
-0.6212 ascii
-0.6167 list
-0.6156 nine
-0.6139 one
+0.4843 powerful
+0.4710 notable
+0.4444 common
+0.4131 famous
+0.4097 effective
+0.4047 influential
+0.3971 significant
+0.3940 notably
 
