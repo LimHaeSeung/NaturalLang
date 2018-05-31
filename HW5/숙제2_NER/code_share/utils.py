@@ -101,7 +101,7 @@ class data_read(object):
 
     def __iter__(self):
         niter = 0
-        with open(self.filename) as f:
+        with open(self.filename, encoding='utf-8-sig') as f:
             words, tags = [], []
             for line in f:
                 line = line.strip()
@@ -211,7 +211,7 @@ def data_build():
 
     print("Building vocab(embedding vocabulary)...")
     vocab_embed = set()
-    with open(config.filename_embedding) as f:
+    with open(config.filename_embedding, encoding='utf-8-sig') as f:
         for line in f:
             word = line.strip().split(' ')[0]
             vocab_embed.add(word)
@@ -229,7 +229,7 @@ def data_build():
 
     vocab_for_embed = load_vocab(config.filename_words)
     embeddings = np.zeros([len(vocab_for_embed), config.dim_word])
-    with open(config.filename_embedding) as f:
+    with open(config.filename_embedding, encoding='utf-8-sig') as f:
         for line in f:
             line = line.strip().split(' ')
             word = line[0]

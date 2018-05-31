@@ -2,9 +2,9 @@
 import model
 import utils
 import sys
-reload(sys)
-sys.setdefaultencoding('utf-8')
-#import tensorflow as tf
+# reload(sys)
+# sys.setdefaultencoding('utf-8')
+# import tensorflow as tf
 
 
 # create instance of config

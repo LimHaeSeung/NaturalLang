@@ -154,7 +154,63 @@ class NERmodel(object):
                            self.config.vocab_tags.items()}
 
     def build(self):
-        pass
+        # step 1.
+        self.sequence_lengths = tf.placeholder(tf.int32, shape=[None], name="sequence_lengths")
+        self.labels = tf.placeholder(tf.int32, shape=[None, None], name="labels")
+        self.dropout = tf.placeholder(tf.float32, shape=[], name="dropout")
+        self.lr = tf.placeholder(tf.float32, shape=[], name="lr")       # Learning Rate
+        self.word_ids = tf.placeholder(tf.int32, shape=[None, None], name="word_ids")
+
+        # step 2.
+        with tf.variable_scope("words"):
+            if self.config.use_pretrained is False:
+                print("Randomly initializing word vectors")
+                _word_embeddings = tf.get_variable(
+                    name="_word_embeddings",
+                    dtype=tf.float32,
+                    shape=[self.config.nwords, self.config.dim_word])
+            else:
+                print("Using pre-trained word vectors :" + self.config.filename_embedding)
+                _word_embeddings = tf.Variable(
+                    self.config.embeddings,
+                    name="_word_embeddings",
+                    dtype=tf.float32)
+
+            word_embeddings = tf.nn.embedding_lookup(_word_embeddings, self.word_ids, name="word_embeddings")
+
+        self.word_embeddings = word_embeddings
+
+        # step 3.
+        cell_fw = tf.contrib.rnn.LSTMCell(self.config.hidden_size_lstm)
+        cell_bw = tf.contrib.rnn.LSTMCell(self.config.hidden_size_lstm)
+        (output_fw, output_bw), _ = tf.nn.bidirectional_dynamic_rnn(cell_fw, cell_bw, self.word_embeddings,
+                                                                    sequence_length=self.sequence_lengths,
+                                                                    dtype=tf.float32)
+
+        output = tf.concat([output_fw, output_bw], axis=-1)
+        output = tf.nn.dropout(output, self.dropout)
+        nsteps = tf.shape(output)[1]
+
+        # step 4.
+        output = tf.reshape(output, [-1, 2*self.config.hidden_size_lstm])
+        W = tf.get_variable("W", dtype=tf.float32, shape=[2 * self.config.hidden_size_lstm, self.config.ntags])
+        b = tf.get_variable("b", dtype=tf.float32, shape=[self.config.ntags], initializer=tf.zeros_initializer())
+        pred = tf.matmul(output, W) + b
+
+        self.logits = tf.reshape(pred, [-1, nsteps, self.config.ntags])
+
+        # step 5.
+        losses = tf.nn.sparse_softmax_cross_entropy_with_logits(logits=self.logits, labels=self.labels)
+        self.loss = tf.reduce_mean(losses)
+        self.labels_pred = tf.cast(tf.argmax(self.logits, axis=-1), tf.int32)
+
+        #step 6.
+        optimizer = tf.train.AdamOptimizer(self.lr)
+        self.train_op = optimizer.minimize(self.loss)
+        self.sess = tf.Session()
+        self.sess.run(tf.global_variables_initializer())
+        self.saver = tf.train.Saver()
+
 
     def train(self, train, dev):
         """Performs training with early stopping and lr exponential decay
