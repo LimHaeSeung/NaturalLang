@@ -163,12 +163,12 @@ class NERmodel(object):
 
         # step 2.
         with tf.variable_scope("words"):
-            if self.config.use_pretrained is False:
+            if self.config.use_pretrained is False:     # word embedding 생성
                 print("Randomly initializing word vectors")
                 _word_embeddings = tf.get_variable(
                     name="_word_embeddings",
                     dtype=tf.float32,
-                    shape=[self.config.nwords, self.config.dim_word])
+                    shape=[self.config.nwords, self.config.dim_word])       # Num voc X 50
             else:
                 print("Using pre-trained word vectors :" + self.config.filename_embedding)
                 _word_embeddings = tf.Variable(
@@ -176,6 +176,7 @@ class NERmodel(object):
                     name="_word_embeddings",
                     dtype=tf.float32)
 
+            # word id에 해당되는 vector값을 저장
             word_embeddings = tf.nn.embedding_lookup(_word_embeddings, self.word_ids, name="word_embeddings")
 
         self.word_embeddings = word_embeddings
@@ -183,16 +184,18 @@ class NERmodel(object):
         # step 3.
         cell_fw = tf.contrib.rnn.LSTMCell(self.config.hidden_size_lstm)
         cell_bw = tf.contrib.rnn.LSTMCell(self.config.hidden_size_lstm)
+        # input data로 word의 vector가 사용됨
         (output_fw, output_bw), _ = tf.nn.bidirectional_dynamic_rnn(cell_fw, cell_bw, self.word_embeddings,
                                                                     sequence_length=self.sequence_lengths,
                                                                     dtype=tf.float32)
 
         output = tf.concat([output_fw, output_bw], axis=-1)
-        output = tf.nn.dropout(output, self.dropout)
+        output = tf.nn.dropout(output, self.dropout)        # dropout 적용
         nsteps = tf.shape(output)[1]
 
         # step 4.
         output = tf.reshape(output, [-1, 2*self.config.hidden_size_lstm])
+        # 두개의 LSTM의 결과 저장을 위해 2*hidden_size 적용
         W = tf.get_variable("W", dtype=tf.float32, shape=[2 * self.config.hidden_size_lstm, self.config.ntags])
         b = tf.get_variable("b", dtype=tf.float32, shape=[self.config.ntags], initializer=tf.zeros_initializer())
         pred = tf.matmul(output, W) + b
@@ -201,14 +204,14 @@ class NERmodel(object):
 
         # step 5.
         losses = tf.nn.sparse_softmax_cross_entropy_with_logits(logits=self.logits, labels=self.labels)
-        self.loss = tf.reduce_mean(losses)
-        self.labels_pred = tf.cast(tf.argmax(self.logits, axis=-1), tf.int32)
+        self.loss = tf.reduce_mean(losses)      # 전체평균 계산
+        self.labels_pred = tf.cast(tf.argmax(self.logits, axis=-1), tf.int32)   # 값이 가장 큰 class를 선정
 
         #step 6.
         optimizer = tf.train.AdamOptimizer(self.lr)
         self.train_op = optimizer.minimize(self.loss)
         self.sess = tf.Session()
-        self.sess.run(tf.global_variables_initializer())
+        self.sess.run(tf.global_variables_initializer()) # 변수 초기화 및 수행
         self.saver = tf.train.Saver()
 
 
